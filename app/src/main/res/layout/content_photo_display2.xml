@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="439dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/leftarrow"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="22dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center|left"
+            android:src="@drawable/ic_action_left_arrow"
+            android:background="@color/white"
+            android:onClick="previousPhoto"
+            android:text="@string/previous"
+            android:backgroundTint="@color/white"
+             />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="341dp"
+            android:layout_height="450dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:paddingTop="50dp"/>
+
+        <Button
+            android:id="@+id/rightarrow"
+            android:layout_width="22dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center|right"
+            android:layout_margin="1dp"
+            android:onClick="nextPhoto"
+            android:text="@string/next"
+            android:icon="@drawable/ic_action_right_arrow"
+            android:backgroundTint="@color/white"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/personTagLable"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/location"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/personTagDisplay"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="sample"
+        android:textSize="10sp" />
+    <TextView
+        android:id="@+id/locationTagLable"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="@string/person"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/locationTagDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="sample"
+        android:textSize="10sp" />
+
+</LinearLayout>

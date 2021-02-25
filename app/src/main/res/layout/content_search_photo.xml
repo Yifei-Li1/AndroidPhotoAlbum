@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="20dp">
+
+    <!--  Name label -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:text="@string/searchByPerson"
+        />
+
+    <!-- Name field -->
+    <EditText
+        android:id="@+id/search_person_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:text="@string/searchByLocation"
+        />
+
+    <!-- Name field -->
+    <EditText
+        android:id="@+id/search_location_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+
+
+
+    <!--  Buttons for save and cancel -->
+    <CheckBox
+        android:id="@+id/andBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/and" />
+
+    <CheckBox
+        android:id="@+id/orBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/or" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/album_save"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:onClick="create"
+            android:text="@string/search"
+            android:textColor="@color/teal_700"
+            android:textSize="16sp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/movie_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:onClick="cancel"
+            android:text="@string/cancel_label"
+            android:textColor="@color/teal_700"
+            android:textSize="16sp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+</LinearLayout>

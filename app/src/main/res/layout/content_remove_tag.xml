@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="20dp">
+
+    <!--  Name label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:text="@string/person"
+        />
+
+    <!-- Name field -->
+    <EditText
+        android:id="@+id/personTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:text="@string/location"
+        />
+    <EditText
+        android:id="@+id/locationTag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background" />
+
+
+
+    <!--  Buttons for save and cancel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/tag_remove"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            app:backgroundTint="@null"
+            android:layout_marginEnd="15dp"
+            android:background="@color/white"
+            android:onClick="removeTagAction"
+            android:text="@string/removeTag"
+            android:textColor="@color/teal_700"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/tagremove_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            app:backgroundTint="@null"
+            android:background="@color/white"
+            android:onClick="cancelTag"
+            android:text="@string/cancel_label"
+            android:textColor="@color/teal_700"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>
+

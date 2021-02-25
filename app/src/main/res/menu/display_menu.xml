@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/photo_delete"
+
+        android:title="@string/delete_photo"
+        />
+    <item android:id="@+id/action_addTag"
+
+        android:title="@string/addTag"
+        />
+    <item android:id="@+id/action_removeTag"
+
+        android:title="@string/removeTag"
+        />
+    <item android:id="@+id/action_movePhoto"
+
+        android:title="@string/movePhoto"
+        />
+
+</menu>

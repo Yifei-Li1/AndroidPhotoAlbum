@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_delete"
+
+        android:title="@string/delete_album"
+        />
+    <item android:id="@+id/action_rename"
+
+        android:title="@string/rename_album"
+        />
+    <item android:id="@+id/action_addPhoto"
+
+        android:title="@string/add_photo"
+        />
+    <item
+        android:id="@+id/action_searchPhoto"
+
+        android:title="@string/search_photo" />
+</menu>
